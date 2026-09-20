@@ -1467,78 +1467,20 @@ CreatedAt = DateTime.UtcNow;
 UpdatedAt = DateTime.UtcNow;
 ```
 
-### Financial Amounts
-
-Use `decimal` rather than `double` for monetary values.
 
 ### Validation
 
 Frontend validation improves the user experience, but backend validation is still required because API callers can bypass the Angular interface.
 
----
-
-## Implemented Best Practices
-
-- Layered frontend and backend architecture
-- DTO pattern
-- Service layer pattern
-- Dependency Injection
-- Scoped service lifetime
-- Entity Framework Core
-- LINQ-based queries
-- Reactive Forms
-- Centralized API services
-- JWT authentication
-- Claims-based identity
-- User ownership validation
-- Route guards
-- HTTP interceptors
-- Password hashing
-- Token expiration validation
-- Automatic logout
-- Configuration-based JWT settings
-- Strongly typed TypeScript interfaces
-- Responsive Bootstrap layout
-- Clear API status handling
-
----
-
-## Known Limitations
-
-- No refresh-token implementation
-- No pagination for large transaction lists
-- No global exception middleware
-- No centralized Angular error interceptor beyond authentication handling
-- No automated unit or integration test suite
-- No email verification
-- No password reset workflow
-- No role-based authorization
-- No production deployment configuration
-- Local storage is used for the access token
-- Some request and response models can be further separated on the Angular side
-- Transaction categories are currently defined in frontend arrays
-
----
 
 ## Future Enhancements
 
-### Authentication and Security
-
 - Refresh tokens
-- Refresh-token rotation
-- Token revocation
-- Secure refresh-token persistence
-- HttpOnly cookie evaluation
-- Email verification
 - Forgot-password workflow
-- Password-reset tokens
-- Multi-factor authentication
 - Role-based authorization
 - Admin and User roles
-
-### Transactions
-
-- Server-side pagination
+- Docker support
+- Pagination
 - Search by category or type
 - Sorting by amount or date
 - Date-range filtering
@@ -1546,8 +1488,6 @@ Frontend validation improves the user experience, but backend validation is stil
 - Monthly and yearly filtering
 - Recurring transactions
 - Transaction notes and descriptions
-- Custom categories
-- Bulk import and export
 
 ### Dashboard and Reporting
 
@@ -1560,43 +1500,6 @@ Frontend validation improves the user experience, but backend validation is stil
 - Excel export
 - Monthly summaries
 
-### Backend Quality
-
-- Asynchronous EF Core methods
-- Global exception handling middleware
-- Structured logging
-- FluentValidation or equivalent validation layer
-- Repository pattern evaluation
-- Unit tests
-- Integration tests
-- API versioning
-- Health checks
-- Rate limiting
-
-### Frontend Quality
-
-- Loading indicators
-- Toast notifications
-- Centralized error handling
-- Typed create and update request models
-- Reusable form controls
-- Confirmation modal component
-- Improved accessibility
-- Responsive mobile refinements
-- Signal-based state management evaluation
-
-### DevOps and Deployment
-
-- Docker support
-- GitHub Actions CI/CD
-- Azure App Service deployment
-- Azure SQL Database
-- Azure Key Vault
-- Environment-specific Angular configuration
-- Automated database deployment strategy
-- Production monitoring and telemetry
-
----
 
 ## Learning Outcomes
 
